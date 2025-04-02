@@ -1,0 +1,123 @@
+print("s#itty NZ quiz for dummies")
+print("By Darrin")
+#I made a lot of empty if statements to make spaces between the actual print statements
+print()
+print("in this multiple choice quiz you will be given the question and 3 options named A, B and C you will then enter the option with the letter code!")
+#score is the variable used for how many questions the user has gotten right
+score=0
+print()
+print("number of points is {}".format(score))
+print()
+print("1. New Zealand is located in the southwestern ___.") 
+print ("a) Pacific Ocean")
+print ("b) Atlantic Ocean") 
+print ("c) Mediterranean Sea")
+#Q1A is a acronym for "question 1 answer" this 
+Q1A=input("Answer:")
+print()
+#instead of making the answers a variable I just made them if statements
+if Q1A == "a":
+    print("well done!")
+
+else:
+    print("false")
+#everytime someone gets something right a point gets added to the score variable
+if Q1A == "a":
+    score=score+1
+print()
+#here was the moment I realized th
+print('number of points is {}' .format (score))
+print()
+# End of question 1
+print('2.The capital city of the country is ___. ')
+print("a) Wellington")
+print("b) Auckland")
+print("c) Christchurch")
+Q2A=input('Answer: ')
+print()
+if Q2A == 'a':
+    print('great!')
+
+else:
+    print('wrong')
+print()
+if Q2A == 'a':
+    score=score+1
+print()
+print('number of points is {}'.format(score))
+print()
+
+print('3.The National Day of NZ, Waitangi Day, is on ___.')
+print("a) Feburary 6th")
+print("b) December 13th")
+print("c) May 5th")
+Q3A=input('Answer: ')
+print()
+if Q3A == 'a':
+    print('You\'re doing well!')
+
+else:
+    print('wrong')
+
+if Q3A == 'a':
+    score=score+1
+print()
+print('number of points is {} '.format (score))
+print()
+print('4.The ___ were the first people who came to NZ 1000 years ago.')
+print("a) Maori")
+print("b) Europeans")
+print("c) Indians")
+Q4A=input('Answer: ')
+print()
+if Q4A == 'a':
+    print('Amazing!')
+
+else:
+    print('wrong')
+
+if Q4A == 'a':
+    score=score+1
+print()
+print('number of points is {} '.format (score))
+print()
+print('5.For every person in NZ there are 10 ___ and 2 cows.')
+print("a) Sheep")
+print("b) Cows")
+print("c) Doe")
+Q5A=input('Answer: ')
+print()
+if Q5A == 'a':
+    print('good boyyyyy')
+
+else:
+    print('wrong')
+
+if Q5A == 'a':
+    score=score+1
+print()
+print('number of points is {} '.format (score))
+print()
+print('6.People from NZ are called the name of a native bird: ___')
+print("a) Kiwi")
+print("b) Pukeko")
+print("c) Go-away bird")
+
+Q6A=input('Answer: ')
+print()
+if Q6A == 'a':
+    print("Your so sigma!")
+
+else:
+    print('wrong')
+
+if Q6A == 'a':
+    score=score+1
+print
+print('number of points is {} '.format (score))
+print()
+if score== 6:
+    print("Wow you got all the questions right thats amazing!")
+    
+else:
+    print("wow not 100%? your kinda shit and a traitor to our contry!!!")
