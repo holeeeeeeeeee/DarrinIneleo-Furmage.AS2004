@@ -18,7 +18,6 @@ print()
 #instead of making the answers a variable I just made them if statements
 if Q1A == "a":
     print("well done!")
-
 else:
     print("false")
 #everytime someone gets something right a point gets added to the score variable
@@ -37,7 +36,6 @@ Q2A=input('Answer: ')
 print()
 if Q2A == 'a':
     print('great!')
-
 else:
     print('wrong')
 print()
@@ -46,7 +44,7 @@ if Q2A == 'a':
 print()
 print('number of points is {}'.format(score))
 print()
-
+#End of question 2 which means every question is 15 lines of code  
 print('3.The National Day of NZ, Waitangi Day, is on ___.')
 print("a) Feburary 6th")
 print("b) December 13th")
@@ -55,69 +53,46 @@ Q3A=input('Answer: ')
 print()
 if Q3A == 'a':
     print('You\'re doing well!')
-
 else:
     print('wrong')
-
 if Q3A == 'a':
     score=score+1
 print()
 print('number of points is {} '.format (score))
 print()
-print('4.The ___ were the first people who came to NZ 1000 years ago.')
-print("a) Maori")
-print("b) Europeans")
-print("c) Indians")
+#end of question 3
+print('4.The ___ were the first people who came to NZ 1000 years ago. \n a) Maori \n b) European \n c) Indians ')
 Q4A=input('Answer: ')
-print()
 if Q4A == 'a':
     print('Amazing!')
-
 else:
     print('wrong')
-
 if Q4A == 'a':
     score=score+1
-print()
-print('number of points is {} '.format (score))
-print()
-print('5.For every person in NZ there are 10 ___ and 2 cows.')
-print("a) Sheep")
-print("b) Cows")
-print("c) Doe")
+#End of question 4
+#until now I didnt know that \n existed and had been using empty print statements
+print('\nnumber of points is {} '.format (score))
+print('\n5.For every person in NZ there are 10 ___ and 2 cows.\n a) Sheep \nb) Cows \n c) Doe')
 Q5A=input('Answer: ')
-print()
 if Q5A == 'a':
     print('good boyyyyy')
-
 else:
     print('wrong')
-
 if Q5A == 'a':
     score=score+1
-print()
-print('number of points is {} '.format (score))
-print()
-print('6.People from NZ are called the name of a native bird: ___')
-print("a) Kiwi")
-print("b) Pukeko")
-print("c) Go-away bird")
-
+print('\nnumber of points is {} '.format (score))
+#now that I know about \n I go from 15 lines per question to 7 half of my original making it much more easy to type out 
+print('6.People from NZ are called the name of a native bird: ___ \n a) Kiwi \n Pukeko \n c) Go away bird')
 Q6A=input('Answer: ')
-print()
 if Q6A == 'a':
-    print("Your so sigma!")
-
+    print("\nYour so sigma!")
 else:
-    print('wrong')
-
+    print('\nwrong')
 if Q6A == 'a':
     score=score+1
-print
-print('number of points is {} '.format (score))
-print()
+print('\nnumber of points is {} '.format (score))
 if score== 6:
-    print("Wow you got all the questions right thats amazing!")
-    
+    print("\nWow you got all the questions right thats amazing!")
+#I thought id be a little mean so I made it so you have to get full marks
 else:
-    print("wow not 100%? your kinda shit and a traitor to our contry!!!")
+    print("\nwow not 100%? your kinda shit and a traitor to our contry!!!")
