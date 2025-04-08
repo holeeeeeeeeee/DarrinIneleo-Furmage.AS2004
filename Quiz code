@@ -1,10 +1,9 @@
 print("s#itty NZ quiz for dummies")
 print("By Darrin")
-#I made a lot of empty if statements to make spaces between the actual print statements
-print()
+print() #I made a lot of empty if statements to make spaces between the actual print statements
+import os #with os I can use the clear function after every question to make it cleaner
 print("in this multiple choice quiz you will be given the question and 3 options named A, B and C you will then enter the option with the letter code!")
-#score is the variable used for how many questions the user has gotten right
-score=0
+score=0#score is the variable used for how many questions the user has gotten right
 print()
 print("number of points is {}".format(score))
 print()
@@ -12,20 +11,17 @@ print("1. New Zealand is located in the southwestern ___.")
 print ("a) Pacific Ocean")
 print ("b) Atlantic Ocean") 
 print ("c) Mediterranean Sea")
-#Q1A is a acronym for "question 1 answer" this 
-Q1A=input("Answer:")
+Q1A=input("Answer:") #Q1A is an acronym for question 1 answer i woudl repeat this through every question
 print()
-#instead of making the answers a variable I just made them if statements
-if Q1A == "a":
+if Q1A == "a":#instead of making the answers a variable I just made them if statements
     print("well done!")
 else:
     print("false")
-#everytime someone gets something right a point gets added to the score variable
+
 if Q1A == "a":
-    score=score+1
+    score=score+1#everytime someone gets something right a point gets added to the score variable
 print()
-#here was the moment I realized th
-print('number of points is {}' .format (score))
+print('number of points is {}' .format (score))#here was the moment I realized that '' could be used instead of ""
 print()
 # End of question 1
 print('2.The capital city of the country is ___. ')
@@ -61,7 +57,7 @@ print()
 print('number of points is {} '.format (score))
 print()
 #end of question 3
-print('4.The ___ were the first people who came to NZ 1000 years ago. \n a) Maori \n b) European \n c) Indians ')
+print('4.The ___ were the first people who came to NZ 1000 years ago. \n a) Maori \n b) European \n c) Indians ')#until now I didnt know that \n existed and had been using empty print statements
 Q4A=input('Answer: ')
 if Q4A == 'a':
     print('Amazing!')
@@ -69,8 +65,7 @@ else:
     print('wrong')
 if Q4A == 'a':
     score=score+1
-#End of question 4
-#until now I didnt know that \n existed and had been using empty print statements
+#End of question 4 now that I know about \n I go from 15 lines per question to 7 half of my original making it much more easy to type out 
 print('\nnumber of points is {} '.format (score))
 print('\n5.For every person in NZ there are 10 ___ and 2 cows.\n a) Sheep \nb) Cows \n c) Doe')
 Q5A=input('Answer: ')
@@ -81,7 +76,7 @@ else:
 if Q5A == 'a':
     score=score+1
 print('\nnumber of points is {} '.format (score))
-#now that I know about \n I go from 15 lines per question to 7 half of my original making it much more easy to type out 
+#End of question 5
 print('6.People from NZ are called the name of a native bird: ___ \n a) Kiwi \n Pukeko \n c) Go away bird')
 Q6A=input('Answer: ')
 if Q6A == 'a':
@@ -96,3 +91,4 @@ if score== 6:
 #I thought id be a little mean so I made it so you have to get full marks
 else:
     print("\nwow not 100%? your kinda shit and a traitor to our contry!!!")
+#end of quiz
