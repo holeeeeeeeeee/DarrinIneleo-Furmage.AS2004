@@ -1,0 +1,97 @@
+import os
+import time
+score=0
+
+list_answer = ['a']
+# I'm lazy so I decided to make every answer the same 
+
+list_questions = ['1. New Zealand is located in the southwestern ___.\na) Pacific Ocean\nb) Atlantic Ocean\nc) Mediterranean Sea\n','2.The capital city of the country is ___. \na) Wellington\nb) Auckland\nc) Christchurch\n','3.The National Day of NZ, Waitangi Day, is on ___.\na) Feburary 6th\nb) December 13th\nc) May 5th\n','4.The ___ were the first people who came to NZ 1000 years ago. \n a) Maori \n b) European \n c) Indians\n','5.For every person in NZ there are 10 ___ and 2 cows.\n a) Sheep \n b) Cows \n c) Doe\n','6.People from NZ are called the name of a native bird: ___ \n a) Kiwi \n b) Pukeko \n c) Go away bird\n']
+# This list holds all the questions being used in the quiz
+
+list_fun_facts = ['New zealand is located in the pasific ocean which  is the largest and deepest of Earth\'s five oceanic divisions','Fun fact about wellington is that \'The Beehive\', the city\'s well-known Parliament Building was in fact designed on the back of a napkin as a joke. The designer never thought for a moment it would be built.','on feb 6th 1840 the treaty of waitangi would be signed establishing a British Governor of New Zealand, recognising Māori ownership of their lands, forests and other possessions, and giving Māori the rights of British subjects','Maori were the first to set foot on New Zealand they would discover New zealand by reading the wind and the stars','New zealand have been the indecent name \"sheep shaggers\" because of the popular yet absurd amount of sheep we have.','The most popular New Zealander nickname would have to be Kiwi since it also reminds people what our native bird is.']
+# Since this quiz is supposedly for poeple who dont know much about NZ i put some facts in the quiz to further teach them on the land we live on
+name = input('what is your name?')
+while name == '':
+    print("you did not enter your name!")
+    name = input('what is your name? ')
+    os.system('clear')
+print(f'hello {name} NZ quiz for dummies\n By Darrin\n\nin this multiple choice quiz you will be given the question and 3 options named A, B and C you will then enter the option with the letter code!\n\nnumber of points is {score}')
+time.sleep(7)
+os.system('clear')
+
+#start of question 1
+Q1A = input (list_questions[0])
+os.system('clear')
+if Q1A in (list_answer):
+    score=score+1
+    print('well done!\nnumber of points is {}' .format (score))
+else:
+    print('false\nnumber of points is {}' .format (score))
+print(list_fun_facts[0])
+time.sleep(6)
+os.system("clear")
+
+#start of question 2
+Q2A = input (list_questions[1])
+os.system('clear')
+if Q2A in (list_answer):
+    score=score+1
+    print('well done!\nnumber of points is {}' .format (score))
+else:
+    print('false\nnumber of points is {}' .format (score))
+print(list_fun_facts[1])
+time.sleep(6)
+os.system("clear")
+
+#start of question 3
+Q3A = input (list_questions[2])
+os.system('clear')
+if Q3A in (list_answer):
+    score=score+1
+    print('well done!\nnumber of points is {}' .format (score))
+else:
+    print('false\nnumber of points is {}' .format (score))
+print(list_fun_facts[2])
+time.sleep(6)
+os.system("clear")
+
+#start of question 4
+Q4A = input (list_questions[3])
+os.system('clear')
+if Q4A in (list_answer):
+    score=score+1
+    print('well done!\nnumber of points is {}' .format (score))
+else:
+    print('false\nnumber of points is {}' .format (score))
+print(list_fun_facts[3])
+time.sleep(6)
+os.system("clear")
+
+#start of question 5
+Q5A = input (list_questions[4])
+os.system('clear')
+if Q5A in (list_answer):
+    score=score+1
+    print('well done!\nnumber of points is {}' .format (score))
+else:
+    print('false\nnumber of points is {}' .format (score))
+print(list_fun_facts[4])
+time.sleep(3)
+os.system("clear")
+
+#start of question 6
+Q6A = input (list_questions[5])
+os.system('clear')
+if Q6A in (list_answer):
+    score=score+1
+    print('well done!\nnumber of points is {}' .format (score))
+else:
+    print('false\nnumber of points is {}' .format (score))
+print(list_fun_facts[5])
+time.sleep(6)
+os.system("clear")
+
+if score == 6:
+    print('well done for answering every question right!')
+else:
+    print('next time try get full marks')
